@@ -1,5 +1,5 @@
-// Il tuo compito è creare un sito e-commerce per Smartphones. 
-// L'homepage che stai per creare sarà la vetrina dei prodotti disponibili, con qualche informazione per ciascun prodotto. 
+// Il tuo compito è creare un sito e-commerce per Smartphones.
+// L'homepage che stai per creare sarà la vetrina dei prodotti disponibili, con qualche informazione per ciascun prodotto.
 // Non sono richieste funzionalità di carrello/cassa.
 // - Completa gli esercizi dall'1 al 6 SOLAMENTE con HTML
 // - Completa gli altri esercizi con JS
@@ -17,44 +17,53 @@
 // ESERCIZIO 7: Scrivi una funzione per cambiare il contenuto del tag h1 in qualcos'altro
 
 const cambiaTitolo = function () {
-let h1Mod = document.querySelector("h1")
-h1Mod.textContent = "- Affiliate Shop -";
-}
+  let h1Mod = document.querySelector("h1");
+  h1Mod.textContent = "- Affiliate Shop -";
+};
 
 // ESERCIZIO 8: Scrivi una funzione per cambiare il colore di background della pagina
 
 const cambiaColoreSfondo = function (colore) {
-    let sfondoPagina = document.querySelector("body")
-    sfondoPagina.style.backgroundColor = colore
-}
+  let sfondoPagina = document.querySelector("body");
+  sfondoPagina.style.backgroundColor = colore;
+};
 
 // ESERCIZIO 9: Scrivi una funzione per cambiare l'indirizzo presente nel footer in un altro, fittizio
 
 const indirizzoMod = function () {
-    let indirizzo = document.querySelector(".indirizzo")
-    indirizzo.textContent = "Indirizzo: Riozzo (MI), via Briganti 45, 20070";
-}
+  let indirizzo = document.querySelector(".indirizzo");
+  indirizzo.textContent = "Indirizzo: Riozzo (MI), via Briganti 45, 20070";
+};
 
 // ESERCIZIO 10: Scrivi una funzione per aggiungere una classe CSS ad ogni link Amazon della tabella
-
+let tuttiGliA = document.querySelectorAll("a");
 const aggiungiClass = function () {
-    let tuttiGliA = document.querySelectorAll("a")
+  for (let i = 0; i < tuttiGliA.length; i++) {
+    let singoloA = tuttiGliA[i];
+    singoloA.onmouseover=  addClass
+  }
+};
+const addClass = function () {
     for (let i = 0; i < tuttiGliA.length; i++) {
-        let singoloA = tuttiGliA[i]
-    singoloA.classList.add("classe-link")
+        let singoloA = tuttiGliA[i];
+        singoloA.classList.add("classe-link")
     }
 }
+aggiungiClass()
 
 // ESERCIZIO 11: Scrivi una funzione per aggiungere/togliere una classe CSS a tutte le immagini della tabella; questa classe deve modificare la visibilità/invisibilità dell'immagine
-
-const toggleImg = function() {
-    let tutteLeImg = document.querySelectorAll("img")
-    for (let i = 0; i < tutteLeImg.length; i++) {
-    let singolaImg = tutteLeImg[i]
-    singolaImg.classList.toggle("img-on-off")
+let tutteLeImg = document.querySelectorAll("img");
+const toggleImg = function () {
+  for (let i = 0; i < tutteLeImg.length; i++) {
+    let singolaImg = tutteLeImg[i];
+    singolaImg.onclick= deleteImg
+  }
+};
+const deleteImg = function () {
+    for (let i=0; i <tutteLeImg.length; i++) {
+        let singolaImg = tutteLeImg[i];
+        singolaImg.classList.add("img-on-off")
     }
 }
-
+toggleImg()
 // ESERCIZIO 12: Scrivi una funzione per cambiare il colore del prezzo di ogni prodotto in uno differente, ogni volta che viene invocata
-
-

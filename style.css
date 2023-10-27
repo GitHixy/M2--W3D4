@@ -19,10 +19,10 @@ h1 {
   margin-block: 50px;
   text-align: center;
 }
-.button-container{
-    display: flex;
-justify-content: center;
-gap: 15px;
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
 }
 footer {
   background-color: #006400;
@@ -32,8 +32,8 @@ footer {
   margin-top: 10px;
 }
 .classe-link {
-    text-decoration: solid;
+ background-color: gold;
 }
 .img-on-off {
-    visibility: hidden;
+  visibility: hidden;
 }

@@ -10,66 +10,66 @@
     <h1 onmouseover="cambiaTitolo()">- Michael's Shop -</h1>
     <div class="main">
       <div class="card">
-        <img onclick="toggleImg()"
+        <img
           src="https://m.media-amazon.com/images/I/710ZBkyXhQL._AC_UL320_.jpg"
           alt="Scrivania Gaming"
         />
         <h3>Scrivania Gaming</h3>
         <p>Scrivania da gioco ergonomica con superficie in fibra di carbonio</p>
-        <p>120$</p>
-        <a onmouseover="aggiungiClass()"
+        <p class="price">120$</p>
+        <a
           href="https://www.amazon.it/HLFURNIEU-Scrivania-Ergonomica-Tappetino-ZZ120/dp/B0BLK35HZM/ref=sr_1_17?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3UYRI9TJ91IRH&keywords=gaming%2Baccessories&qid=1698415292&sprefix=gaming%2Baccessories%2Caps%2C87&sr=8-17&th=1"
           >Compra Ora!</a
         >
       </div>
       <div class="card">
-        <img onclick="toggleImg()"
+        <img
           src="https://m.media-amazon.com/images/I/71jRUA8nxzL._AC_UL320_.jpg"
           alt="Mouse Gaming"
         />
         <h3>Logitech G402 Gaming Mouse</h3>
         <p>Mouse gaming 4000dpi ultralight</p>
-        <p>50$</p>
-        <a onmouseover="aggiungiClass()"
+        <p class="price">50$</p>
+        <a
           href="https://www.amazon.it/Logitech-Hyperion-Pulsanti-Programmabili-Antracite/dp/B00LFBEOUA/ref=sr_1_29?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3UYRI9TJ91IRH&keywords=gaming+accessories&qid=1698415292&sprefix=gaming+accessories%2Caps%2C87&sr=8-29"
           >Compra Ora!</a
         >
       </div>
       <div class="card">
-        <img onclick="toggleImg()"
+        <img
           src="https://m.media-amazon.com/images/I/71QclY4ig4L._AC_UL320_.jpg"
           alt="Microfono Gaming"
         />
         <h3>Microfono Gaming</h3>
         <p>Mic cardioide per PC, PS4/PS5, USB + RGB</p>
-        <p>35$</p>
-        <a onmouseover="aggiungiClass()"
+        <p class="price">35$</p>
+        <a
           href="https://www.amazon.it/COCONISE-Micr%C3%B3fono-Microfono-cardioide-auriculares/dp/B0BXPFNNF9/ref=sr_1_32?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3UYRI9TJ91IRH&keywords=gaming+accessories&qid=1698415292&sprefix=gaming+accessories%2Caps%2C87&sr=8-32"
           >Compra Ora!</a
         >
       </div>
       <div class="card">
-        <img onclick="toggleImg()"
+        <img
           src="https://m.media-amazon.com/images/I/615JEWGsK1L._AC_UL320_.jpg"
           alt="Elgato StreamDeck"
         />
         <h3>Elgato Stream Deck</h3>
         <p>Elgato Deck 6 tasti programmabili</p>
-        <p>60$</p>
-        <a onmouseover="aggiungiClass()"
+        <p class="price">60$</p>
+        <a
           href="https://www.amazon.it/Elgato-Stream-Deck-tasti-software-quali-OBS/dp/B07DYRS1WH/ref=sr_1_52?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3UYRI9TJ91IRH&keywords=gaming+accessories&qid=1698415292&sprefix=gaming+accessories%2Caps%2C87&sr=8-52"
           >Compra Ora!</a
         >
       </div>
       <div class="card">
-        <img onclick="toggleImg()"
+        <img
           src="https://m.media-amazon.com/images/I/71seJTK5OpL._AC_UL320_.jpg"
           alt="T-Shirt"
         />
         <h3>T-Shirt con Stampa Gaming</h3>
         <p>T-shirt cotone 100%</p>
-        <p>15$</p>
-        <a onmouseover="aggiungiClass()"
+        <p class="price">15$</p>
+        <a
           href="https://www.amazon.it/Regalo-Divertente-Gamer-Videogiochi-Maglietta/dp/B08YK8QYHM/ref=sr_1_91?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3UYRI9TJ91IRH&keywords=gaming+accessories&qid=1698415143&sprefix=gaming+accessories%2Caps%2C87&sr=8-91"
           >Compra Ora!</a
         >
@@ -87,13 +87,19 @@
         <input type="submit" value="Invia Commento" />
       </form>
     </div>
-<div class="button-container">
-    <button onclick="cambiaColoreSfondo('#ADD8E6')">Cambia lo sfondo in azzurro chiaro</button>
-    <button onclick="cambiaColoreSfondo('#FFA07A')">Cambia lo sfondo in rosso chiaro</button>
-</div>
+    <div class="button-container">
+      <button onclick="cambiaColoreSfondo('#ADD8E6')">
+        Cambia lo sfondo in azzurro chiaro
+      </button>
+      <button onclick="cambiaColoreSfondo('#FFA07A')">
+        Cambia lo sfondo in rosso chiaro
+      </button>
+    </div>
     <footer>
       <h4>- Michael's Shop -</h4>
-      <p class="indirizzo" onmouseover="indirizzoMod()">Indirizzo: Melegnano (MI), via Giardino 20, 20077</p>
+      <p class="indirizzo" onmouseover="indirizzoMod()">
+        Indirizzo: Melegnano (MI), via Giardino 20, 20077
+      </p>
       <p>michael.shop@gmail.com - Cell. 3490998001</p>
     </footer>
     <script src="./template.js"></script>
