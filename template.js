@@ -40,30 +40,42 @@ let tuttiGliA = document.querySelectorAll("a");
 const aggiungiClass = function () {
   for (let i = 0; i < tuttiGliA.length; i++) {
     let singoloA = tuttiGliA[i];
-    singoloA.onmouseover=  addClass
+    singoloA.onmouseover = addClass;
   }
 };
 const addClass = function () {
-    for (let i = 0; i < tuttiGliA.length; i++) {
-        let singoloA = tuttiGliA[i];
-        singoloA.classList.add("classe-link")
-    }
-}
-aggiungiClass()
+  for (let i = 0; i < tuttiGliA.length; i++) {
+    let singoloA = tuttiGliA[i];
+    singoloA.classList.add("classe-link");
+  }
+};
+aggiungiClass();
 
 // ESERCIZIO 11: Scrivi una funzione per aggiungere/togliere una classe CSS a tutte le immagini della tabella; questa classe deve modificare la visibilità/invisibilità dell'immagine
 let tutteLeImg = document.querySelectorAll("img");
 const toggleImg = function () {
   for (let i = 0; i < tutteLeImg.length; i++) {
     let singolaImg = tutteLeImg[i];
-    singolaImg.onclick= deleteImg
+    singolaImg.onclick = deleteImg;
   }
 };
 const deleteImg = function () {
-    for (let i=0; i <tutteLeImg.length; i++) {
-        let singolaImg = tutteLeImg[i];
-        singolaImg.classList.add("img-on-off")
-    }
-}
-toggleImg()
+  for (let i = 0; i < tutteLeImg.length; i++) {
+    let singolaImg = tutteLeImg[i];
+    singolaImg.classList.add("img-on-off");
+  }
+};
+toggleImg();
 // ESERCIZIO 12: Scrivi una funzione per cambiare il colore del prezzo di ogni prodotto in uno differente, ogni volta che viene invocata
+
+const colorMod = function () {
+  let prezzi = document.querySelectorAll(".price");
+  for (let i = 0; i < prezzi.length; i++) {
+    prezzo = prezzi[i];
+    let randomColor = `rgb(${Math.floor(Math.random() * 255)}, 
+                           ${Math.floor(Math.random() * 255)}, 
+                           ${Math.floor(Math.random() * 255)})`;
+    prezzo.style.color = randomColor;
+  }
+};
+colorMod();
